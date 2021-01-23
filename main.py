@@ -12,10 +12,22 @@ tabla=tablak[tablaszam]
 fuggvenyek.megjelenites(tabla)
 
 ures=fuggvenyek.ures_db_szam(tabla)
-#while(ures!=0):
+"""
+while(ures!=0):
+    x=int(input())
+    y=int(input())
+    szam=int(input())
+    import copy
+    uj_tabla=fuggvenyek.beker(x,y,szam,copy.deepcopy(tabla))
+    if(uj_tabla==tabla):
+        continue
+    else:    
+        fuggvenyek.megjelenites(uj_tabla)
+        ures-=1
+    tabla=copy.deepcopy(uj_tabla) 
+    print(ures)  
 
-x=int(input())
-y=int(input())
-szam=int(input())
-tabla=fuggvenyek.beker(x,y,szam,tabla)
-fuggvenyek.megjelenites(tabla)
+"""    
+valami=[[3,1,2],[1,2,3],[1,2,3]]
+fuggvenyek.ellenorzes(valami)
+
