@@ -16,6 +16,7 @@ def megjelenites(tabla:list):
 
 
 
+
 def beker(xpoz:int,ypoz:int,ertek:int,tabla:list):
     """Ez a függvény a bekérést segíti elő. A bekért érteékeket ellenőrzi, a játék szabályai alapján.
        Ha minden feltételnek megfelel, akkor be kerül a számunk a játék táblájába. 

@@ -9,6 +9,7 @@ print("elso fuggv. teszt:")
 fuggv.megjelenites(tabla)
 print("teszt vege\n")
 
+
 #harmadik függvény teszt: üres számlálás
 
 print("harmadik fuggv. teszt:")

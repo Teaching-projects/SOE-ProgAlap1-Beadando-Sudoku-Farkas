@@ -26,7 +26,7 @@ while(ures!=0):
     x=int(input())
     y=int(input())
     szam=int(input())
-    import copy
+    import copy        
     uj_tabla=fuggvenyek.beker(x,y,szam,copy.deepcopy(tabla))
     if(uj_tabla==tabla):
         continue
