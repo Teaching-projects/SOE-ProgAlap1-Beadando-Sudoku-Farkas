@@ -3,17 +3,26 @@ file=open('bemenet.json')
 tablak=json.load(file)
 file.close()
 
+
+
 import random
-tablaszam=random.randint(0,0)
+tablaszam=random.randint(0,4)
+
+
 
 import fuggvenyek
 fuggvenyek=fuggvenyek
 tabla=tablak[tablaszam]
 fuggvenyek.megjelenites(tabla)
 
+
+
 ures=fuggvenyek.ures_db_szam(tabla)
-"""
+
+
+
 while(ures!=0):
+    print("kerlek ird be eloszor a poziciot, majd a szamot!")
     x=int(input())
     y=int(input())
     szam=int(input())
@@ -24,10 +33,15 @@ while(ures!=0):
     else:    
         fuggvenyek.megjelenites(uj_tabla)
         ures-=1
-    tabla=copy.deepcopy(uj_tabla) 
-    print(ures)  
+    tabla=copy.deepcopy(uj_tabla)
 
-"""    
-valami=[[3,1,2],[1,2,3],[1,2,3]]
-fuggvenyek.ellenorzes(valami)
+
+
+vegeredmeny=fuggvenyek.ellenorzes(tabla)
+
+
+
+if vegeredmeny==True:
+    print("Gratulálok, megoldottad a feladványt :)")
+else: print("Sajnálom, helytelen megoldás :(")
 
